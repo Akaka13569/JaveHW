@@ -1,0 +1,14 @@
+package Hw.CH02;
+
+public class ch02_5 {
+	/*一斤牛肉120元，一斤雞蛋36元，一把青菜20元，請用程式計算購買一斤半的牛肉、
+	 * 兩斤雞蛋與三把青菜共需多少錢? 
+	 */
+	public static void main(String[] args){
+		double a1 = 120;
+		int a2 = 36;
+		int a3 = 20;
+		
+		System.out.println("購買一斤半的牛肉、 兩斤雞蛋與三把青菜共需" + (a1 *1.5 + a2 *2 + a3 *3));
+	}
+}
