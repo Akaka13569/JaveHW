@@ -1,0 +1,21 @@
+package Hw.CH02;
+
+public class ch02_2 {
+/* Math.random()會產生大於等於0 ， 小於1的double型態的浮點數
+ * 請印出5個由Math.random()所產生的浮點數
+ */
+	public static void main(String[] args){
+		double  n , n1 , n2 , n3 , n4;
+		n = (double) (Math.random());
+		n1 = (double) (Math.random());
+		n2 = (double) (Math.random());
+		n3 = (double) (Math.random());
+		n4 = (double) (Math.random());
+		
+		System.out.println(n);
+		System.out.println(n1);
+		System.out.println(n2);
+		System.out.println(n3);
+		System.out.println(n4);
+	}
+}
