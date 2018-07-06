@@ -1,0 +1,25 @@
+//Q7請寫一個程式，利用System.out.println(); 敘述在螢幕上顯示下列三個運算式的結果；
+// * 5+5
+// * 5+'5'
+// * 5+"5"
+// * 並說明答案的產生原因
+
+package Hw.CH03;
+
+public class ch03_7 {
+	public static void main(String[] args) {
+//		如何看字元型態的值
+//		int n ='5';System.out.println(n);
+		
+		System.out.println(5+5);
+		System.out.println("兩個數值5相加等於數值10");
+		
+		System.out.println(5+'5');
+		System.out.println("一個數值5加字元型態5的值=58");
+		
+		System.out.println(5+"5");
+		System.out.println("字串可與任何物件進行+運算，所以數值5加字串5等於55");
+	}	
+
+	
+}
