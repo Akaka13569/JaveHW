@@ -1,0 +1,16 @@
+package Hw.CH02;
+
+public class ch02_1 {
+/*在城市內定義兩個型態為int的數值 : 12, 6。印出以此兩數值為鞭長的長方形邊長與面積
+  int x = 12 ;
+  int y = 6 ;
+     註 : x+y表示 x 與y 的和，x*y 表示x與y的積
+  */
+	public static void main(String[] args){
+		int x = 12;
+		int y = 6;
+		System.out.println("長方形邊長 =" + (x * 2 + y * 2));
+		System.out.println("長方形面積 =" + x * y );
+	}	
+	
+}
