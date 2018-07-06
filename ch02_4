@@ -1,0 +1,21 @@
+package Hw.CH02;
+
+public class ch02_4 {
+	/*在Java語言中，字元可視為整數，請印出 '0' 'A' 'a' '張' '君' '雅' 這六個字元對應的整數值
+	  */
+	public static void main(String[] args){
+		int x = '0';
+		int x1 = 'A';
+		int x2 = 'a';
+		int x3 = '張';
+		int x4 = '君';
+		int x5 = '雅';
+		
+		System.out.println("0對應的整數值為" + x);
+		System.out.println("A對應的整數值為" + x1);
+		System.out.println("a對應的整數值為" + x2);
+		System.out.println("張對應的整數值為" + x3);
+		System.out.println("君對應的整數值為" + x4);
+		System.out.println("雅對應的整數值為" + x5);
+	}
+}
