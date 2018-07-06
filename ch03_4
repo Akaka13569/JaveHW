@@ -1,0 +1,14 @@
+//Q4由鍵盤輸入三個字串，然後由螢幕顯示這三個字串的長度
+
+package Hw.CH03;
+
+public class ch03_4 {
+	public static void main(String[] args) {
+		
+		String a = "你是誰", b = "從哪裡來", c = "你到哪去";
+		System.out.println("a字串長度為" + a.length());
+		System.out.println("b字串長度為" + b.length());
+		System.out.println("c字串長度為" + c.length());
+		
+	}
+}
