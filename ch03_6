@@ -1,0 +1,17 @@
+//Q6請計算邊長為10的正方形的正方形的面積與內接圓面積(直徑為10)的差值
+
+package Hw.CH03;
+
+public class ch03_6 {
+	public static void main(String[] args) {
+		int a = 10;
+		double b = Math.pow(a, 2);// 正方形面積
+		
+		int radius = 10 / 2;
+		double c = radius * radius * (Math.round(Math.PI*100)/100.0);// 內接圓面積
+//		double c = Math.round((radius * radius * Math.PI)*100)/100.0;
+		
+		System.out.println("正方形的面積" + b + "內接圓面積" + c + "差值=" + (b - c));
+	}
+
+}
