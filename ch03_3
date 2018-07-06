@@ -1,0 +1,15 @@
+//Q3由鍵盤輸入兩整數，印出他們的和、差、積、商與餘數
+
+package Hw.CH03;
+
+public class ch03_3 {
+	public static void main(String[] args) {
+		double a = 99, b = 69;
+
+		System.out.println("和" + (a + b));
+		System.out.println("差" + (a - b));
+		System.out.println("積" + (a * b));
+		System.out.println("商" + (a / b));
+		System.out.println("餘數" + (a % b));
+	}
+}
