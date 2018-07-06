@@ -1,0 +1,15 @@
+//Q2.由程式算出256559秒為多少天、多少小時、多少分與多少秒?
+
+package Hw.CH03;
+
+public class ch03_2 {
+	public static void main(String[] args) {
+		int sec, min, hour, day;
+		sec = 256559 % 60;
+		min = (256559 / 60) % 60;
+		hour = ((256559 / 60) / 60) % 24;
+		day = ((256559 / 60) / 60) / 24;
+		System.out.println("256559秒為" + day + "天" + hour + "小時" + min + "分" + sec + "秒");
+	}
+
+}
