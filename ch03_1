@@ -1,0 +1,13 @@
+//Q1由程式算出59個雞蛋是多少打，又多少個?
+
+package Hw.CH03;
+
+public class ch03_1 {
+	public static void main(String[] args) {
+		int egg = 59;
+		int a, b;
+		a = egg / 12;
+		b = egg % 12;
+		System.out.println("雞蛋有" + a + "打" + b + "個");
+	}
+}
