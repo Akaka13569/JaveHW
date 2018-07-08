@@ -1,0 +1,17 @@
+//Q1 1-100隨機產生10個數字，算總和和平均
+package Hw.CH04;
+
+public class CH04_1 {
+
+	public static void main(String[] args) {
+		int sum = 0;
+		for (int x = 1; x <= 10; x++) {
+			int y = (int) (Math.random() * 100) + 1;
+			System.out.println(y);
+			sum += y;
+		}
+		System.out.println("亂數總和為" + sum);
+		System.out.println("亂數平均為" + sum / 10);
+	}
+
+}
