@@ -1,0 +1,18 @@
+//將字串"Hello, World, 大家好"一次取一個字 將他對應整數顯示
+package Hw.CH04;
+
+public class CH04_7 {
+
+	public static void main(String[] args) {
+		String st = "Hello, World, 大家好" ; 
+		int x ; 	
+		
+		for (x=0 ; x<st.length(); x++ ) {
+			
+			System.out.println(st.charAt(x) + " "+ (int)st.charAt(x));
+			
+		}
+
+	}
+
+}
