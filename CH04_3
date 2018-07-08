@@ -1,0 +1,25 @@
+//Q3 1-10的連乘積 A for敘述 B while敘述
+package Hw.CH04;
+
+public class CH04_3 {
+
+	public static void main(String[] args) {
+		int sum = 1;
+		// QA
+		for (int x = 1; x <= 10; x++) {
+			sum *= x;
+
+		}
+		System.out.println(sum);
+		// -------------------------------------------------
+		// QB
+		// int x =1;
+		// int sum=1;
+		// while (x<10) {
+		// x++;
+		// sum*=x;
+		// }
+		// System.out.println(sum);
+	}
+
+}
