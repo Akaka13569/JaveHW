@@ -1,0 +1,28 @@
+//用for印出下列訊息
+//1 2 3 4 5 6 7 8 9 10
+//1 2 3 4 5 6 7 8 9
+//1 2 3 4 5 6 7 8
+//1 2 3 4 5 6 7
+//1 2 3 4 5 6
+//1 2 3 4 5
+//1 2 3 4
+//1 2 3
+//1 2
+//1
+package Hw.CH04;
+
+public class CH04_5 {
+
+	public static void main(String[] args) {
+		int x, y;
+		for (x = 10; x <= 10 & x > 0; x--) {
+			for (y = 1; y <= 10; y++) {
+				System.out.print(y);
+				if (y == x) {
+					break;
+				}
+			}
+			System.out.println();
+		}
+	}
+}
