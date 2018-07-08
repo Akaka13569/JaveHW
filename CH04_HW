@@ -1,0 +1,167 @@
+//Q1 1-100隨機產生10個數字，算總和和平均
+package Hw.CH04;
+
+public class CH04_HW {
+
+	public static void main(String[] args) {
+		int sum = 0;
+		for (int x = 1; x <= 10; x++) {
+			int y = (int) (Math.random() * 100) + 1;
+			System.out.println(y);
+			sum += y;
+		}
+		System.out.println("亂數總和為" + sum);
+		System.out.println("亂數平均為" + sum / 10);
+	}
+
+}
+//----------------------------------------------------
+//Q2 1-1000的偶數和
+//package Hw.CH04;
+//
+//public class CH04_2 {
+//
+//	public static void main(String[] args) {
+//		int sum = 0;
+//		for (int x = 1; x <= 1000; x++) {
+//			if (x % 2 == 0)
+//				sum += x;
+//
+//		}
+//		System.out.println("1-1000偶數總和為" + sum);
+//
+//	}
+//
+//}
+//----------------------------------------------------
+//Q3 1-10的連乘積 A for敘述 B while敘述
+//package Hw.CH04;
+//
+//public class CH04_3 {
+//
+//	public static void main(String[] args) {
+//		int sum = 1;
+//		// QA
+//		for (int x = 1; x <= 10; x++) {
+//			sum *= x;
+//
+//		}
+//		System.out.println(sum);
+//		// -------------------------------------------------
+//		// QB
+//		// int x =1;
+//		// int sum=1;
+//		// while (x<10) {
+//		// x++;
+//		// sum*=x;
+//		// }
+//		// System.out.println(sum);
+//	}
+//
+//}
+//----------------------------------------------------
+//Q4 用for顯示
+//1 4 9 16 25 36 49 64 81 100
+//package Hw.CH04;
+//
+//public class CH04_4 {
+//
+//	public static void main(String[] args) {
+//		int x, y;
+//		for (x = 1; x <= 10; x++) {
+//			y = x;
+//			y *= x;
+//			System.out.print("  " + y);
+//		}
+//
+//	}
+//
+//}
+//----------------------------------------------------
+//用for印出下列訊息
+//1 2 3 4 5 6 7 8 9 10
+//1 2 3 4 5 6 7 8 9
+//1 2 3 4 5 6 7 8
+//1 2 3 4 5 6 7
+//1 2 3 4 5 6
+//1 2 3 4 5
+//1 2 3 4
+//1 2 3
+//1 2
+//1
+//package Hw.CH04;
+//
+//public class CH04_5 {
+//
+//	public static void main(String[] args) {
+//		int x, y;
+//		for (x = 10; x <= 10 & x > 0; x--) {
+//			for (y = 1; y <= 10; y++) {
+//				System.out.print(y);
+//				if (y == x) {
+//					break;
+//				}
+//			}
+//			System.out.println();
+//		}
+//	}
+//}
+//----------------------------------------------------
+/*用for顯示 
+ * 
+1	2	3	4	5	6	7	8	9	10
+2	4	6	8	10	12	14	16	18	20
+3	6	9	12	15	18	21	24	27	30
+4	8	12	16	20	24	28	32	36	40
+5	10	15	20	25	30	35	40	45	50
+6	12	18	24	30	36	42	48	54	60
+7	14	21	28	35	42	49	56	63	70
+8	16	24	32	40	48	56	64	72	80
+9	18	27	36	45	54	63	72	81	90
+10	20	30	40	50	60	70	80	90	100
+
+ */
+
+//package Hw.CH04;
+//
+//public class CH04_6 {
+//
+//	public static void main(String[] args) {
+//		int x, y;
+//		for (x = 1; x <= 10 ; x++) {
+//			for (y = 1; y<=10; y++) {
+//				if(y*x<=9){
+//					System.out.print("  "+y*x);
+//				} else if (y*x==100) {
+//					System.out.print(" "+y*x);
+//				} else {System.out.print(" "+y*x);}
+//				 
+//			}
+//			System.out.println();
+//		}
+//			
+//	}
+//
+//}
+//----------------------------------------------------
+//將字串"Hello, World, 大家好"一次取一個字 將他對應整數顯示
+//package Hw.CH04;
+//
+//public class CH04_7 {
+//
+//	public static void main(String[] args) {
+//		String st = "Hello, World, 大家好" ; 
+//		int x ; 	
+//		
+//		for (x=0 ; x<st.length(); x++ ) {
+//			
+//			System.out.println(st.charAt(x) + " "+ (int)st.charAt(x));
+//			
+//		}
+//
+//	}
+//
+//}
+
+
+
