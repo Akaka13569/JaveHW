@@ -1,0 +1,17 @@
+//Q2 1-1000的偶數和
+package Hw.CH04;
+
+public class CH04_2 {
+
+	public static void main(String[] args) {
+		int sum = 0;
+		for (int x = 1; x <= 1000; x++) {
+			if (x % 2 == 0)
+				sum += x;
+
+		}
+		System.out.println("1-1000偶數總和為" + sum);
+
+	}
+
+}
