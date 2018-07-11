@@ -1,15 +1,37 @@
 //Q3由鍵盤輸入兩整數，印出他們的和、差、積、商與餘數
 
-package Hw.CH03;
+package CH03;
+
+import java.util.Scanner;
 
 public class ch03_3 {
 	public static void main(String[] args) {
-		double a = 99, b = 69;
+		// double a = 99, b = 69;
+		//
+		//
+		// System.out.println("和" + (a + b));
+		// System.out.println("差" + (a - b));
+		// System.out.println("積" + (a * b));
+		// System.out.println("商" + (a / b));
+		// System.out.println("餘數" + (a % b));
 
-		System.out.println("和" + (a + b));
-		System.out.println("差" + (a - b));
-		System.out.println("積" + (a * b));
-		System.out.println("商" + (a / b));
-		System.out.println("餘數" + (a % b));
+		Scanner scan = new Scanner(System.in);
+		int x = 0, y = 0;
+
+		System.out.println("請輸入兩個整數");
+
+		if (scan.hasNextInt()) {
+			x = scan.nextInt();
+		}
+		if (scan.hasNextInt()) {
+			y = scan.nextInt();
+		}
+
+		System.out.println(x + "與" + y + "的和為" + (x + y));
+		System.out.println(x + "與" + y + "的差為" + (x - y));
+		System.out.println(x + "與" + y + "的積為" + (x * y));
+		System.out.println(x + "與" + y + "的商為" + (x / y));
+		System.out.println(x + "與" + y + "的餘數為" + (x % y));
+
 	}
 }
