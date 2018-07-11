@@ -1,14 +1,38 @@
 //Q4由鍵盤輸入三個字串，然後由螢幕顯示這三個字串的長度
 
-package Hw.CH03;
+package CH03;
+
+import java.util.Scanner;
 
 public class ch03_4 {
 	public static void main(String[] args) {
-		
-		String a = "你是誰", b = "從哪裡來", c = "你到哪去";
-		System.out.println("a字串長度為" + a.length());
-		System.out.println("b字串長度為" + b.length());
-		System.out.println("c字串長度為" + c.length());
-		
+		//
+		// String a = "你是誰", b = "從哪裡來", c = "你到哪去";
+		// System.out.println("a字串長度為" + a.length());
+		// System.out.println("b字串長度為" + b.length());
+		// System.out.println("c字串長度為" + c.length());
+
+		Scanner scan = new Scanner(System.in);
+
+		String st1 = "", st2 = "", st3 = "";
+
+		System.out.println("請輸入三個字串");
+
+		if (scan.hasNext()) {
+			st1 = scan.next();
+
+		}
+		if (scan.hasNext()) {
+			st2 = scan.next();
+
+		}
+		if (scan.hasNext()) {
+			st3 = scan.next();
+
+		}
+		System.out.println("\"" + st1 + "\"" + "的字串長度為" + st1.length());
+		System.out.println("\"" + st2 + "\"" + "的字串長度為" + st2.length());
+		System.out.println("\"" + st3 + "\"" + "的字串長度為" + st3.length());
+
 	}
 }
