@@ -1,0 +1,216 @@
+//Q1 
+//一維陣列如下:
+//{84.0, 94, 79.9, 90.5, 82.4, 65.7, 72.8, 99.0, 85.2, 100}
+//印出該陣列所有元素的平均數與大於平均數的所有元素
+package CH05;
+
+public class CH05_HW {
+	public static void main(String[] args) {
+		double[] ar = { 84.0, 94, 79.9, 90.5, 82.4, 65.7, 72.8, 99.0, 85.2, 100 };
+		double sum = 0;
+		double avg = 0;
+
+		for (int n = 0; n < ar.length; n++) {
+			sum += ar[n];
+			avg =  sum / ar.length;
+		}
+
+		System.out.println("sum=" + sum);
+		System.out.println("avg=" + avg);
+
+		for (int n = 0; n < ar.length; n++) {
+			if (ar[n] > avg)
+				System.out.println(ar[n]);
+		}
+
+		// for(double x : ar) {
+		// if(x>avg)
+		// System.out.println(x);
+		// }
+
+	}
+}
+//-----------------------------------------------------------------------------
+//Q2 跑1-42數字中隨機產生6個數字 不允許重複
+//package CH05;
+//
+//public class CH05_2 {
+//	public static void main(String[] args) {
+//		int a1[] = new int[6];
+//		System.out.print("隨機亂數:");
+//		b1: for (int x = 0; x < a1.length; x++) {
+//			a1[x] = (int) (Math.random() * 42) + 1;
+//			for (int y = 0; y < x; y++) {
+//				if (a1[x] == a1[y]) {
+//					x--;
+//					continue b1;
+//				}
+//			}
+//
+//			System.out.print(" " + a1[x]);
+//		}
+//
+//	}
+//}
+//-----------------------------------------------------------------------------
+//Q3
+//由鍵盤輸入代表某個日期的三個數字yyyy,mm,dd 算出該日期是該年的第幾天
+
+//package CH05;
+//
+//import java.util.Scanner;
+//import java.util.GregorianCalendar;
+//
+//public class CH05_3 {
+//	public static void main(String[] args) {
+//		Scanner scan = new Scanner(System.in);
+//		// 定義三個變量來接收年月日
+//		int ye = 0, mon = 1, day = 1;
+//		// 用來接收總天數
+//		int sum = 0;
+//		int a[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+//
+//		for (int x = 0; x <= 0; x++) {// 判斷年
+//			System.out.println("請輸入西元年: ");
+//			if (scan.hasNextInt()) {
+//				ye = scan.nextInt();
+//			}
+//			if (ye <= 0) {// 判斷年是否正確
+//				System.out.println("輸入年份請大於0");
+//				x--;
+//			} else {
+//				break;
+//			}
+//		}
+//
+//		for (int y = 0; y <= 0; y++) {// 判斷月
+//			System.out.println("請輸入月: ");
+//			if (scan.hasNextInt()) {
+//				mon = scan.nextInt();
+//			}
+//			if (mon < 0 | mon > 12) {// 判斷月是否正確
+//				System.out.println("請輸入月份1-12");
+//				y--;
+//			} else {
+//				break;
+//			}
+//		}
+//
+//		for (int z = 0; z <= 0; z++) {// 判斷日   for(;;)無窮迴圈
+//			System.out.println("請輸入日: ");
+//			if (scan.hasNextInt()) {
+//				day = scan.nextInt();
+//			} else {
+//				System.out.println("輸入錯誤請重新輸入");
+//				z--;
+//				
+//			}
+//			if (day <= 0 | day > a[mon]) {// 判斷日是否正確
+//				System.out.println("重新輸入天");
+//			z--;
+//			} //判斷閏年 改2月份的天數為29
+//			GregorianCalendar gc = new GregorianCalendar();
+//			if (gc.isLeapYear(ye)) {
+//				a[2] = 29;
+//				day = a[2];
+//			}else {
+//				break;
+//			}
+//		}
+//				
+//		
+//		for (int n = 1; n <= mon-1; n++) {//天數相加
+//			sum += a[n];
+//		}
+//		
+//		sum += day;
+//		
+//		System.out.println(ye + "年" + mon + "月" + day + "日為當年的第" + sum + "天");
+//	}
+//
+//}
+//-----------------------------------------------------------------------------
+//Q4
+//假設字串陣列如下
+//String[] ca ={"snoppy","micky","lucky","kitty","derby"}
+//請計算出此陣列中母音字母(a,e,i,o,u)總共有多少個
+//package CH05;
+//
+//public class CH05_4 {
+//	public static void main(String[] args) {
+//		String[] ca = { "snoopy", "micky", "lucky", "kitty", "derby" };
+//		int sum = 0;
+//		for (int x = 0; x < ca.length; x++) {
+//			for (int y = 0; y < ca[x].length(); y++) {
+//				switch (ca[x].charAt(y)) {
+//				case 'a':
+//				case 'e':
+//				case 'i':
+//				case 'o':
+//				case 'u':
+//
+//					sum++;
+//					break;
+//				}
+//
+//			}
+//		}
+//		System.out.println("母音有" + sum);
+		//-----------------------------------------------------------------------------
+		// String st ="";
+		// int i = 0;
+		//
+		// for(int x = 0; x < ca.length ;x++) {
+		// st += ca[x];
+		// }
+		//
+		// for(int y = 0; y < st.length(); y++) {
+		// if(st.charAt(y) == 'a' | st.charAt(y) == 'e' | st.charAt(y) == 'i' |
+		// st.charAt(y) == 'o' | st.charAt(y) == 'u') {
+		// i++;
+		// System.out.println("母音" + st.charAt(y));
+		// }
+		// }
+		// System.out.println(i);
+		//-----------------------------------------------------------------------------
+//	}
+//}
+//-----------------------------------------------------------------------------
+//Q5
+//二維陣列如下
+//int[][] test={
+//				{10, 35, 40, 100, 90, 85, 75, 70},
+//				{37, 75, 77, 89, 64, 75, 70, 95}
+//				{100, 70, 79, 90, 75, 70, 79, 90}
+//				{77, 95, 70, 89, 60, 75, 85, 89}
+//				{98, 70, 89, 90, 75, 90, 89, 90}
+//				{90, 80, 100, 75, 50, 20, 99, 75}};
+//計算每一橫列的總和與每一直行的總和
+//package CH05;
+//
+//public class CH05_5 {
+//	public static void main(String[] args) {
+//		int[][] test = { { 10, 35, 40, 100, 90, 85, 75, 70 }, 
+//				{ 37, 75, 77, 89, 64, 75, 70, 95 },
+//				{ 100, 70, 79, 90, 75, 70, 79, 90 },
+//				{ 77, 95, 70, 89, 60, 75, 85, 89 },
+//				{ 98, 70, 89, 90, 75, 90, 89, 90 }, 
+//				{ 90, 80, 100, 75, 50, 20, 99, 75 } };
+//		int sum1 = 0;
+//		int sum2 = 0;
+//		for (int x = 0; x < test.length; x++) {
+//			sum1 = 0;
+//			for (int y = 0; y < test[x].length; y++) {
+//				sum1 += test[x][y];
+//			}
+//			System.out.println("第"+(x+1)+"橫列的總和" + sum1);
+//		}
+//		for (int a = 0; a < test[0].length; a++) {
+//			sum2 = 0;
+//			for (int b = 0; b < test.length; b++) {
+//				sum2 += test[b][a];
+//			}
+//			System.out.println("第"+(a+1)+"行的總和" + sum2);
+//		}
+//	}
+//}
